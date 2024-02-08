@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
-
 from kraeks.plonetraining import _
 from Products.Five.browser import BrowserView
-
-# from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
+from DateTime import DateTime
+from plone import api
 
 class Bootstrap(BrowserView):
-    # If you want to define a template here, please remove the template from
-    # the configure.zcml registration of this view.
-    # template = ViewPageTemplateFile('bootstrap.pt')
 
     def __call__(self):
-        # Implement your own actions:
-        self.msg = _(u'A small message')
+        self.portaltitle = api.portal.get().title
+        today = DateTime()
+        self.localized = api.portal.get_localized_time(datetime=today)
         return self.index()
