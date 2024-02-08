@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="kraeks.plonetraining">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="bootstrap"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".bootstrap.Bootstrap"
+    template="bootstrap.pt"
+    permission="zope2.View"
+    />
+
+
+</configure>
