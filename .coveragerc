@@ -1,0 +1,6 @@
+[report]
+include =
+    src/kraeks/*
+omit =
+    */test*
+    */upgrades/*

@@ -1,0 +1,4 @@
+graft src/kraeks
+graft docs
+include *.rst
+global-exclude *.pyc
