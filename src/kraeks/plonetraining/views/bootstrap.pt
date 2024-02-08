@@ -15,11 +15,11 @@
 
               <div tal:replace="structure provider:plone.abovecontenttitle" /><!-- Viewlet über Titel z.B. Titelbild -->
 
-              <h1 tal:content="context/title" /><!-- Titel - wird aus dem Context gelesen -->
+              <h1 tal:content="context/title" /><!-- Titel wird aus dem Context gelesen -->
 
               <div tal:replace="structure provider:plone.belowcontenttitle" /><!-- Viewlets unter dem Titel z.B. Änderungshinweise -->
 
-              <p class="lead" tal:condition="context/description"><!-- Kurzbeschreibung - wird aus dem Context gelesen -->
+              <p class="lead" tal:condition="context/description"><!-- Kurzbeschreibung wird aus dem Context gelesen -->
                 <span class="dot">
                   <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                     <defs></defs>
@@ -31,7 +31,7 @@
 
               <div tal:replace="structure provider:plone.abovecontentbody" /><!-- Viewlets über dem Content -->
 
-              <!-- hier kann Content eingefügt werden --->
+              <!-- hier kann Content eingefügt werden -->
 
               <!-- Ende Content -->
 

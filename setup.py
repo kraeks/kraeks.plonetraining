@@ -49,11 +49,8 @@ setup(
         'setuptools',
         # -*- Extra requirements: -*-
         'z3c.jbot',
-        'Products.GenericSetup>=1.8.2',
-        'plone.api>=1.8.4',
-        'plone.restapi < 7.0.0a1',
-        'plone.app.dexterity',
-        'plone.app.referenceablebehavior',
+        'plone.api',
+        'plone.restapi',
         'plone.app.relationfield',
         'plone.app.lockingbehavior',
         'plone.schema',
